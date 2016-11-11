@@ -1,9 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import {render} from "react-dom";
+import { Router, Route, browserHistory, IndexRoute} from "react-router";
+
+import About from './components/About';
 import App from './App';
+import Beer from './components/Beer';
+import Home from './components/Home';
+
 import './index.css';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+class AppRoutes extends React.Component {
+  render() {
+    return (
+      <Router history={browserHistory}>
+        <Route path={"/"} component={App} >
+            <IndexRoute component={Home} />
+            <Route path="about" component={About} />
+            <Route path="brews" component={Beer} />
+        </Route>
+      </Router>
+    );
+  }
+}
+
+render(<AppRoutes />, window.document.getElementById('root'));

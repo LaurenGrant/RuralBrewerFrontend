@@ -4,7 +4,7 @@ class Main extends Component {
   render() {
     return(
       <div>
-        <div className="container">
+        <div id="heroHome" className="container">
           {this.props.children}
         </div>
       </div>

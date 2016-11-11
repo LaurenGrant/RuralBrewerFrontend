@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Footer from './components/Footer';
-import About from './components/About';
 import NavBar from './components/NavBar';
 
 class App extends Component {
@@ -10,7 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar />
-        <About />
+        {this.props.children}
         <Footer />
       </div>
     );
