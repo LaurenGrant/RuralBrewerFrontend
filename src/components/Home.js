@@ -6,7 +6,7 @@ class Home extends Component {
       <div id="heroHome" className="ui middle aligned one column centered grid">
         <div className="row">
           <div className="column">
-            <img className="ui centered circular image" src="http://lorempixel.com/200/200/"></img>
+            <h1 className="whiteText">Welcome</h1>
           </div> {/* End column */}
         </div> {/* End row */}
       </div>

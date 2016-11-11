@@ -4,17 +4,18 @@
 }
 
 #heroHome {
-  background-image: url('/images/alcohol-21938.jpg');
+  background-image: url(./images/alcohol-21938.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 700px;
 }
 
 #heroAbout{
-  background-image: url('/images/factory-1518504.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 700px;
+  background-image: url(./images/factory-1518504.jpg);
+  background-position: center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
 }
 
 .overlay {
